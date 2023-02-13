@@ -1,0 +1,1540 @@
+2023-02-13T11:56:59.153Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+2023-02-13T11:56:59.164Z INFO @wdio/cli:launcher: Run onPrepare hook
+2023-02-13T11:56:59.166Z DEBUG @wdio/appium-service: Will spawn Appium process: cmd /c appium --base-path / --relaxed-security --address localhost --log ./logs/appium.log
+2023-02-13T11:56:59.965Z DEBUG @wdio/appium-service: Appium started with ID: 16744
+2023-02-13T11:56:59.966Z DEBUG @wdio/cli:utils: Finished to run "onPrepare" hook in 801ms
+2023-02-13T11:56:59.968Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-02-13T11:56:59.969Z DEBUG @wdio/cli:utils: Finished to run "onWorkerStart" hook in 0ms
+2023-02-13T11:56:59.970Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/wdio.android.app.conf.ts
+[0-0] 2023-02-13T11:57:00.372Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2023-02-13T11:57:00.492Z DEBUG @wdio/config:utils: Found 'ts-node' package, auto-compiling TypeScript files
+[0-0] 2023-02-13T11:57:00.566Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2023-02-13T11:57:00.573Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+[0-0] RUNNING in Android - D:\Roman\Documents\ITSwitcher\AutoQA\Home_works\hw25\tests\specs\app.biometric.login.spec.ts
+[0-0] 2023-02-13T11:57:00.849Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2023-02-13T11:57:00.850Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2023-02-13T11:57:00.902Z INFO webdriver: [POST] http://localhost:4723/session
+[0-0] 2023-02-13T11:57:00.902Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       platformName: 'Android',
+[0-0]       'appium:deviceName': 'emulator-5554',
+[0-0]       'appium:platformVersion': '13.0',
+[0-0]       'appium:orientation': 'PORTRAIT',
+[0-0]       'appium:automationName': 'UiAutomator2',
+[0-0]       'appium:app': 'D:\\Roman\\Documents\\ITSwitcher\\AutoQA\\Home_works\\hw25\\apps\\Android-NativeDemoApp-0.4.0.apk',
+[0-0]       'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
+[0-0]       'appium:newCommandTimeout': 240,
+[0-0]       'appium:connectHardwareKeyboard': true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     platformName: 'Android',
+[0-0]     'appium:deviceName': 'emulator-5554',
+[0-0]     'appium:platformVersion': '13.0',
+[0-0]     'appium:orientation': 'PORTRAIT',
+[0-0]     'appium:automationName': 'UiAutomator2',
+[0-0]     'appium:app': 'D:\\Roman\\Documents\\ITSwitcher\\AutoQA\\Home_works\\hw25\\apps\\Android-NativeDemoApp-0.4.0.apk',
+[0-0]     'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
+[0-0]     'appium:newCommandTimeout': 240,
+[0-0]     'appium:connectHardwareKeyboard': true
+[0-0]   }
+[0-0] }
+[0-0] 2023-02-13T11:57:10.448Z INFO webdriver: COMMAND findElement("accessibility id", "Home")
+[0-0] 2023-02-13T11:57:10.448Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:10.448Z INFO webdriver: DATA { using: 'accessibility id', value: 'Home' }
+[0-0] 2023-02-13T11:57:10.517Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0167-ffff-ffff00000015',
+[0-0]   ELEMENT: '00000000-0000-0167-ffff-ffff00000015'
+[0-0] }
+[0-0] 2023-02-13T11:57:10.525Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0167-ffff-ffff00000015")
+[0-0] 2023-02-13T11:57:10.525Z INFO webdriver: [GET] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-0167-ffff-ffff00000015/displayed
+[0-0] 2023-02-13T11:57:10.554Z INFO webdriver: RESULT true
+[0-0] 2023-02-13T11:57:10.556Z INFO webdriver: COMMAND findElement("accessibility id", "Login")
+[0-0] 2023-02-13T11:57:10.556Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:10.556Z INFO webdriver: DATA { using: 'accessibility id', value: 'Login' }
+[0-0] 2023-02-13T11:57:10.601Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0167-ffff-ffff0000001f',
+[0-0]   ELEMENT: '00000000-0000-0167-ffff-ffff0000001f'
+[0-0] }
+[0-0] 2023-02-13T11:57:10.607Z INFO webdriver: COMMAND elementClick("00000000-0000-0167-ffff-ffff0000001f")
+[0-0] 2023-02-13T11:57:10.607Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-0167-ffff-ffff0000001f/click
+[0-0] 2023-02-13T11:57:10.659Z INFO webdriver: COMMAND findElement("accessibility id", "Login-screen")
+[0-0] 2023-02-13T11:57:10.660Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:10.660Z INFO webdriver: DATA { using: 'accessibility id', value: 'Login-screen' }
+[0-0] 2023-02-13T11:57:10.710Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:10.714Z INFO webdriver: COMMAND findElement("accessibility id", "Login-screen")
+[0-0] 2023-02-13T11:57:10.715Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:10.715Z INFO webdriver: DATA { using: 'accessibility id', value: 'Login-screen' }
+[0-0] 2023-02-13T11:57:10.815Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0167-ffff-ffff00000044',
+[0-0]   ELEMENT: '00000000-0000-0167-ffff-ffff00000044'
+[0-0] }
+[0-0] 2023-02-13T11:57:10.817Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0167-ffff-ffff00000044")
+[0-0] 2023-02-13T11:57:10.817Z INFO webdriver: [GET] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-0167-ffff-ffff00000044/displayed
+[0-0] 2023-02-13T11:57:11.393Z INFO webdriver: RESULT true
+[0-0] 2023-02-13T11:57:11.393Z INFO webdriver: COMMAND findElement("accessibility id", "button-biometric")
+[0-0] 2023-02-13T11:57:11.393Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:11.393Z INFO webdriver: DATA { using: 'accessibility id', value: 'button-biometric' }
+[0-0] 2023-02-13T11:57:11.442Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:11.445Z INFO webdriver: COMMAND findElement("accessibility id", "button-biometric")
+[0-0] 2023-02-13T11:57:11.445Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:11.445Z INFO webdriver: DATA { using: 'accessibility id', value: 'button-biometric' }
+[0-0] 2023-02-13T11:57:11.507Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:11.510Z INFO webdriver: COMMAND executeScript("mobile: shell", <object>)
+[0-0] 2023-02-13T11:57:11.510Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/execute/sync
+[0-0] 2023-02-13T11:57:11.510Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: shell',
+[0-0]   args: [
+[0-0]     {
+[0-0]       command: 'am start -a android.settings.SECURITY_SETTINGS && locksettings set-pin 1234'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2023-02-13T11:57:13.052Z INFO webdriver: RESULT Starting: Intent { act=android.settings.SECURITY_SETTINGS }
+[0-0]
+[0-0] 2023-02-13T11:57:13.053Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("Fingerprint")")
+[0-0] 2023-02-13T11:57:13.053Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:13.053Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("Fingerprint")'
+[0-0] }
+[0-0] 2023-02-13T11:57:13.976Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-016a-ffff-ffff00000102',
+[0-0]   ELEMENT: '00000000-0000-016a-ffff-ffff00000102'
+[0-0] }
+[0-0] 2023-02-13T11:57:13.978Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-016a-ffff-ffff00000102")
+[0-0] 2023-02-13T11:57:13.978Z INFO webdriver: [GET] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-016a-ffff-ffff00000102/displayed
+[0-0] 2023-02-13T11:57:14.001Z INFO webdriver: RESULT true
+[0-0] 2023-02-13T11:57:14.001Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("Fingerprint")")
+[0-0] 2023-02-13T11:57:14.001Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:14.001Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("Fingerprint")'
+[0-0] }
+[0-0] 2023-02-13T11:57:14.046Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-016a-ffff-ffff00000102',
+[0-0]   ELEMENT: '00000000-0000-016a-ffff-ffff00000102'
+[0-0] }
+[0-0] 2023-02-13T11:57:14.048Z INFO webdriver: COMMAND elementClick("00000000-0000-016a-ffff-ffff00000102")
+[0-0] 2023-02-13T11:57:14.048Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-016a-ffff-ffff00000102/click
+[0-0] 2023-02-13T11:57:14.759Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("Re-enter your PIN")")
+[0-0] 2023-02-13T11:57:14.759Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:14.759Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("Re-enter your PIN")'
+[0-0] }
+[0-0] 2023-02-13T11:57:15.620Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-016c-ffff-ffff00000158',
+[0-0]   ELEMENT: '00000000-0000-016c-ffff-ffff00000158'
+[0-0] }
+[0-0] 2023-02-13T11:57:15.622Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-016c-ffff-ffff00000158")
+[0-0] 2023-02-13T11:57:15.622Z INFO webdriver: [GET] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element/00000000-0000-016c-ffff-ffff00000158/displayed
+[0-0] 2023-02-13T11:57:15.640Z INFO webdriver: RESULT true
+[0-0] 2023-02-13T11:57:15.640Z INFO webdriver: COMMAND executeScript("mobile: shell", <object>)
+[0-0] 2023-02-13T11:57:15.641Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/execute/sync
+[0-0] 2023-02-13T11:57:15.641Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: shell',
+[0-0]   args: [ { command: 'input text 1234 && input keyevent 66' } ]
+[0-0] }
+[0-0] 2023-02-13T11:57:15.815Z INFO webdriver: RESULT 
+[0-0] 2023-02-13T11:57:15.815Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:15.816Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:15.816Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:17.286Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:17.290Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:17.290Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:17.290Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:17.311Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:17.798Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:17.799Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:17.799Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:17.929Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:18.301Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:18.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:18.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:18.320Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:18.805Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:18.806Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:18.806Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:18.852Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:19.291Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:19.292Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:19.292Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:19.312Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:19.794Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:19.794Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:19.794Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:19.816Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:20.295Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:20.295Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:20.295Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:20.315Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:20.796Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:20.796Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:20.796Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:20.820Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:21.293Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:21.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:21.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:21.341Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:21.792Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:21.792Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:21.792Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:21.905Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:22.296Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:22.296Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:22.296Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:22.314Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:22.795Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:22.796Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:22.796Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:22.831Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:23.294Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:23.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:23.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:23.309Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:23.795Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:23.795Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:23.795Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:23.813Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:24.298Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:24.298Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:24.298Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:24.314Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:24.797Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:24.797Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:24.797Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:24.838Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:25.300Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:25.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:25.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:25.318Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:25.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:25.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:25.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:25.820Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:26.303Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:26.303Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:26.303Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:26.340Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:26.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:26.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:26.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:26.822Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:27.304Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:27.304Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:27.304Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:27.322Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:27.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:27.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:27.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:27.826Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:28.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:28.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:28.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:28.325Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:28.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:28.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:28.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:28.817Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:29.299Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:29.299Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:29.299Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:29.313Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:29.798Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:29.799Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:29.799Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:29.835Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:30.301Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:30.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:30.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:30.325Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:30.798Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:30.798Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:30.798Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:30.813Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:31.295Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:31.296Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:31.296Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:31.314Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:31.794Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:31.794Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:31.795Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:31.989Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:32.294Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:32.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:32.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:32.318Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:32.791Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:32.791Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:32.792Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:32.826Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:33.290Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:33.291Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:33.291Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:33.312Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:33.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:33.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:33.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:33.848Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:34.305Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:34.305Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:34.305Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:34.330Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:34.792Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:34.793Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:34.793Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:34.832Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:35.306Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:35.306Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:35.306Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:35.325Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:35.805Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:35.805Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:35.805Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:35.843Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:36.290Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:36.290Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:36.290Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:36.333Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:36.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:36.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:36.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:36.829Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:37.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:37.303Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:37.303Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:37.336Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:37.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:37.804Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:37.804Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:37.842Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:38.301Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:38.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:38.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:38.323Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:38.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:38.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:38.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:38.816Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'
+[0-0] }
+[0-0] 2023-02-13T11:57:39.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:39.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:39.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:39.316Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:39.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:39.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:39.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:39.831Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:40.301Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:40.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:40.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:40.321Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:40.797Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:40.797Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:40.797Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:40.819Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:41.294Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:41.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:41.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:41.342Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:41.796Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:41.796Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:41.796Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:41.827Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:42.298Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:42.298Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:42.298Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:42.330Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:42.797Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:42.797Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:42.797Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:42.812Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:43.294Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:43.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:43.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:43.332Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:43.795Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:43.795Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:43.795Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:43.821Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:44.291Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:44.291Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:44.291Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:44.323Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:44.791Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:44.791Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:44.791Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:44.819Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:45.292Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:45.292Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:45.292Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:45.330Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:45.792Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:45.792Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:45.792Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:45.807Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:46.291Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:46.291Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:46.291Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:46.324Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:46.805Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:46.805Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:46.805Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:46.833Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'
+[0-0] }
+[0-0] 2023-02-13T11:57:47.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:47.303Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:47.303Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:47.358Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:47.802Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:47.802Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:47.802Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:47.819Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:48.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:48.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:48.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:48.323Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:48.791Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:48.791Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:48.792Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:48.817Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:49.292Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:49.293Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:49.293Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:49.348Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:49.794Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:49.794Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:49.794Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:49.830Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:50.294Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:50.294Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:50.294Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:50.307Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:50.805Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:50.805Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:50.806Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:50.833Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:51.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:51.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:51.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:51.322Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:51.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:51.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:51.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:51.992Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:52.301Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:52.301Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:52.301Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:52.318Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:52.798Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:52.798Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:52.798Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:52.811Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:53.297Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:53.297Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:53.298Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:53.343Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:53.798Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:53.799Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:53.799Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:53.837Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:54.299Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:54.299Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:54.300Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:54.350Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:54.797Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:54.797Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:54.797Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:54.840Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:55.296Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:55.297Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:55.297Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:55.326Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:55.793Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:55.793Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:55.793Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:55.822Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:56.290Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:56.290Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:56.290Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:56.324Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:56.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:56.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:56.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:56.845Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:57.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:57.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:57.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:57.329Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:57.801Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:57.801Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:57.801Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:57.820Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:58.296Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:58.297Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:58.297Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:58.335Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:58.794Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:58.794Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:58.794Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:58.817Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:59.292Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:59.292Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:59.292Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:59.356Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:57:59.793Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:57:59.793Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:57:59.793Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:57:59.820Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:58:00.296Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:58:00.296Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:58:00.296Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:58:00.337Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:58:00.796Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:58:00.796Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:58:00.796Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:58:00.823Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:58:01.290Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:58:01.290Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:58:01.290Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:58:01.318Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:58:01.803Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:58:01.803Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:58:01.803Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:58:01.839Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:33:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Roman\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\basedriver\\commands\\find.js:53:10)'        
+[0-0] }
+[0-0] 2023-02-13T11:58:02.302Z INFO webdriver: COMMAND findElement("-android uiautomator", "new UiSelector().textContains("NEXT")")
+[0-0] 2023-02-13T11:58:02.302Z INFO webdriver: [POST] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a/element
+[0-0] 2023-02-13T11:58:02.302Z INFO webdriver: DATA {
+[0-0]   using: '-android uiautomator',
+[0-0]   value: 'new UiSelector().textContains("NEXT")'
+[0-0] }
+[0-0] 2023-02-13T11:58:02.313Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2023-02-13T11:58:02.314Z INFO webdriver: [DELETE] http://localhost:4723/session/b8a9b8e3-0204-44df-b7ba-0cecb3bd624a
+2023-02-13T11:58:02.629Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in Android - D:\Roman\Documents\ITSwitcher\AutoQA\Home_w

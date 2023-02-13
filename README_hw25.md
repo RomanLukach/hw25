@@ -17,7 +17,7 @@ This report has 2 sections:
 - Summary -  shows how many spec files were executed, how many passed, how many failed and summary time spent for all specs execution
 
 5. Если некоторые тесты будут падать - заведите issues и добавьте ссылки на них в ваш .md документ
-One test is failed - issue is open on github.
+One test failed - issue is open on github.
 
 # ==========================================================================================================================================
 
