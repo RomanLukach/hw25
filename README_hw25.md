@@ -7,28 +7,17 @@
 3. Запустить тесты для Android antive app - DONE
 4. Cоставьте отчет о пройденных тестах и приложите его в отдельный .md файл в вашем репозитории
 
-appium.log report [default location - (./appium.log)] generated during test execyuution. 
-I define (change default location) location as  "log: "./logs/appium.log" in "wdio.shared.local.appium.conf.ts" configuration file.
+appium.log report [default location - (./appium.log)] generated during test execution. 
+I define (change default location) location as  "log: "./reports/appium.log" in "wdio.shared.local.appium.conf.ts" configuration file.
 
 Also, cmd output can be used as a log -see "cmdConsoleLogForWdioAndroidAppTests.md" file
 This report has 2 sections:
 - Execution - shows which script RUNNING and its status (PASSED / FAILED)
-- "spec" Reporter - shows which script runnin, its sesion id and assertions status.
-- Summary -  shows how many spec files were executed, how many passed, how many failed and summary time spent for all specs execution
-
+- "spec" Reporter - shows which script running, its session id and assertions status.
+- Summary -  shows how many spec files were executed, how many passed, how many failed and summary time spent for all specs execution
 
 5. Если некоторые тесты будут падать - заведите issues и добавьте ссылки на них в ваш .md документ
-Two tests are failed with siomilar reason:
-
-- element ("android=new UiSelector().textContains("NEXT")") still not displayed after 45000ms
-Error: element ("android=new UiSelector().textContains("NEXT")") still not displayed after 45000ms
-
-- WebdriverIO and Appium, when using drag and drop should be able to solve the puzzle by dragging the pieces into the puzzle 
-element ("~button-Retry") still not displayed after 45000ms
-Error: element ("~button-Retry") still not displayed after 45000ms
-
-Both cases are related to async/await functionality which I did not succeed to install. (It is required a lot of other packages!!!)  
-Therefore, I could not say either they are FAILED due the bug in application or due async/await in NodeJS v.18.4 on Windows 10.
+One test is failed - issue is open on github.
 
 # ==========================================================================================================================================
 
