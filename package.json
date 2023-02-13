@@ -1,0 +1,48 @@
+{
+  "name": "hw25",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "android.browserstack.app": "wdio ./config/browserstack/wdio.android.bs.app.conf.ts",
+    "android.sauce.emulators.app.eu": "REGION=eu  wdio config/saucelabs/wdio.android.emulators.app.conf.ts",
+    "android.sauce.emulators.app.us": "wdio config/saucelabs/wdio.android.emulators.app.conf.ts",
+    "android.sauce.rdc.app.eu": "REGION=eu wdio config/saucelabs/wdio.android.rdc.app.conf.ts",
+    "android.sauce.rdc.app.us": "wdio config/saucelabs/wdio.android.rdc.app.conf.ts",
+    "android.app": "wdio config/wdio.android.app.conf.ts",
+    "android.browser": "wdio config/wdio.android.browser.conf.ts",
+    "ios.app": "wdio config/wdio.ios.app.conf.ts",
+    "ios.sauce.simulators.app.eu": "REGION=eu wdio ./config/saucelabs/wdio.ios.simulators.app.conf.ts",
+    "ios.sauce.simulators.app.us": "wdio ./config/saucelabs/wdio.ios.simulators.app.conf.ts",
+    "ios.browser": "wdio config/wdio.ios.browser.conf.ts",
+    "lint": "eslint config tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanLukach/hw25.git"
+  },
+  "author": "Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanLukach/hw25/issues"
+  },
+  "homepage": "https://github.com/RomanLukach/hw25#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@wdio/appium-service": "^7.19.5",
+    "@wdio/browserstack-service": "^7.19.7",
+    "@wdio/cli": "^7.30.1",
+    "@wdio/local-runner": "^7.30.1",
+    "@wdio/mocha-framework": "^7.26.0",
+    "@wdio/sauce-service": "^7.30.1",
+    "@wdio/spec-reporter": "^7.29.1",
+    "eslint-plugin-wdio": "^7.19.4",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4"
+  }
+}
