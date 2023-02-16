@@ -37,8 +37,24 @@ The following tests were added but hiden due they  allowto loging:
     - initial LoginScreen.ts file copied to COPY_LoginScreen.ts
     - LoginScreen.ts was modified and saved with the same file name:
         -  function 'submitSignUpForm' modified to be able to operate with Password and Repeate paswodr fields separetly
+
 3. folder \tests\screenobjects\components\
     - added 3 files:
         - WrongEmailAlert.ts
         - WrongPasswordAlert.ts
         - WrongPasswordRepeateAlert.ts
+
+4. Terminal Log output (Windows 10): 
+[emulator-5554 Android 13 #0-0]    ✓ No email - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ No Password - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ No email / No password - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ Short Password (less 8 symbols) - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ Wrong Mail address Missed "@" - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ Wrong Mail address no preface - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ Wrong Mail address missed dot - should not be able login
+[emulator-5554 Android 13 #0-0]    ✓ should be able login successfully
+[emulator-5554 Android 13 #0-0]    ✓ No mail /  passwords are correct - should not be able sign up
+[emulator-5554 Android 13 #0-0]    ✓ Repeate passwords is shorter - should not be able sign up
+[emulator-5554 Android 13 #0-0]    ✓ No password / Repeate password is correct - should not be able sign up
+[emulator-5554 Android 13 #0-0]    ✓ Repeate password is the same lenght but different - should not be able sign up
+[emulator-5554 Android 13 #0-0]    ✓ should be able sign up successfully
