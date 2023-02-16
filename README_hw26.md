@@ -6,3 +6,39 @@
 - обязательно следуйте подходу ААА
 - тесты также должны проходить по отдельности и в разном порядке, то есть быть независимыми
 - заведите issue, если ваши тесты найдут проблему
+
+Changes in original boilerplate project:
+
+1. folder \tests\specs\
+    - Initial app.login.spec.ts file copied to COPY_app.login.spec.ts
+    - Initial tests 'should be able login successfully' and 'should be able sign up successfully' are not modifyed 
+    - follwoing tests added to app.login.spec.ts:
+        LOGIN:
+        - No email - should not be able login
+        - No Password - should not be able login
+        - No email / No password - should not be able login
+        - Short Password (less 8 symbols) - should not be able login
+        - Wrong Mail address Missed "@" - should not be able login
+        - Wrong Mail address no preface - should not be able login
+        - Wrong Mail address missed dot - should not be able login
+        SIGN UP:
+        - No mail /  passwords are correct - should not be able sign up
+        - Repeate passwords is shorter - should not be able sign up
+        - No password / Repeate password is correct - should not be able sign up
+        - Repeate password is the same lenght but different - should not be able sign up
+
+The following tests were added but hiden due they  allowto loging:
+- Long Password (3000 symbols)
+- RUS Encoding Password
+- Special Symbols Password
+- Password with backspace
+
+2. folder tests\screenobjects\
+    - initial LoginScreen.ts file copied to COPY_LoginScreen.ts
+    - LoginScreen.ts was modified and saved with the same file name:
+        -  function 'submitSignUpForm' modified to be able to operate with Password and Repeate paswodr fields separetly
+3. folder \tests\screenobjects\components\
+    - added 3 files:
+        - WrongEmailAlert.ts
+        - WrongPasswordAlert.ts
+        - WrongPasswordRepeateAlert.ts
