@@ -22,6 +22,7 @@ Changes in original boilerplate project:
         - Wrong Mail address no preface - should not be able login
         - Wrong Mail address missed dot - should not be able login
         SIGN UP:
+        - No mail / No passwords - should not be able sign up
         - No mail /  passwords are correct - should not be able sign up
         - Repeate passwords is shorter - should not be able sign up
         - No password / Repeate password is correct - should not be able sign up
@@ -57,6 +58,7 @@ npm run android.app -- --spec=tests/specs/app.login.spec.ts
 [emulator-5554 Android 13 #0-0]    ✓ Wrong Mail address no preface - should not be able login
 [emulator-5554 Android 13 #0-0]    ✓ Wrong Mail address missed dot - should not be able login
 [emulator-5554 Android 13 #0-0]    ✓ should be able login successfully
+[emulator-5554 Android 13 #0-0]    ✓ No mail / No passwords - should not be able sign up
 [emulator-5554 Android 13 #0-0]    ✓ No mail /  passwords are correct - should not be able sign up
 [emulator-5554 Android 13 #0-0]    ✓ Repeate passwords is shorter - should not be able sign up
 [emulator-5554 Android 13 #0-0]    ✓ No password / Repeate password is correct - should not be able sign up
