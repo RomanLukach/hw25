@@ -44,7 +44,11 @@ The following tests were added but hiden due they  allowto loging:
         - WrongPasswordAlert.ts
         - WrongPasswordRepeateAlert.ts
 
-4. Terminal Log output (Windows 10): 
+4. Execution
+To run only login script use following command in terminal: 
+npm run android.app -- --spec=tests/specs/app.login.spec.ts
+
+5. Terminal Log output (Windows 10): 
 [emulator-5554 Android 13 #0-0]    ✓ No email - should not be able login
 [emulator-5554 Android 13 #0-0]    ✓ No Password - should not be able login
 [emulator-5554 Android 13 #0-0]    ✓ No email / No password - should not be able login

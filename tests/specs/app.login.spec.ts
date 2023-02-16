@@ -163,6 +163,20 @@ describe('WebdriverIO and Appium, when interacting with a login form,', () => {
 //
 //============================== SignUp Page - srarts =======================================================================
 // ---------------------------- Sign up My Tests Starts ---------------------------------------------------------------------
+
+    it('No mail / No passwords - should not be able sign up', async () => {
+        // Always make sure you are on the right tab
+        await LoginScreen.tapOnSignUpContainerButton();
+        // Submit the data
+    await LoginScreen.submitSignUpForm({ username: NoMail, password: PassNull, passwordRepeat: PassNull });
+        // Wait for the alert and validate it
+        await WrongEmailAlert.waitForIsShown();
+        await expect(await WrongEmailAlert.text()).toEqual('Please enter a valid email address');
+        await WrongPassAlert.waitForIsShown();
+        await expect(await WrongPassAlert.text()).toEqual('Please enter at least 8 characters');
+        await WrongPassRepeateAlert.waitForIsShown();
+        await expect(await WrongPassRepeateAlert.text()).toEqual('Please enter the same password');
+    });
     it('No mail /  passwords are correct - should not be able sign up', async () => {
         // Always make sure you are on the right tab
         await LoginScreen.tapOnSignUpContainerButton();
